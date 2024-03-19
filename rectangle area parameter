@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("enter values:");
+    scanf("%d",&a);
+    scanf( "%d",&b);
+    printf("area is %d",a*b);
+     printf("perimeter is %d",2*(a+b));
+    return 0;
+}
+
