@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int sumr,sumi,ar,br,bi,ai,r;
+    printf("Enter first complex numbers :");
+    scanf("%d%d",&ar,&ai);
+    printf("Enter second complex numbers  : ");
+    scanf("%d%d",&br,&bi);
+    sumr = ar + br;
+    sumi = ai + bi;
+    printf("sum of complex numbers:%d + %di",sumr,sumi);
+
+    return 0;
+}
