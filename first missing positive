@@ -1,0 +1,29 @@
+
+#include <stdbool.h>
+#include <stdio.h>
+
+int main()
+{
+    int arr[] = { 1,2,7,3,4 };
+    //  int arr[] = { 5, 4, -1, 2, 1 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    bool present[n + 1];
+    for (int i = 0; i < n; i++)
+        present[i] = false;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > 0 && arr[i] <= n)
+            present[arr[i]] = true;
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (!present[i])
+        {
+            printf("%d", i);
+            return 0; 
+        }
+    }
+}
